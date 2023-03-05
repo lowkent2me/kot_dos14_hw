@@ -1,0 +1,4 @@
+Host dev
+    User kotvs
+    CheckHostIP no
+    ProxyCommand bash -c "nc $(/home/devops/ip_vm.sh) 22"

@@ -1,0 +1,10 @@
+yc compute instance create yc-uvm \
+--description "Yandex cloud ubuntu 22.04 VM" \
+--memory 4GB \
+--cores 2 \
+--core-fraction 50 \
+--network-interface subnet-name=subnet-a \
+--create-disk name=disku1,type=network-hdd,size=30 \
+--create-boot-disk image-folder-id=standard-images,image-family=ubuntu-2204-lts \
+--hostname devops-vm \
+--ssh-key ~/.ssh/id_rsa.pub

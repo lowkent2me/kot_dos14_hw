@@ -1,0 +1,3 @@
+alias start_yc_vm='yc compute instance start dev-vm'
+alias stop_yc_vm='yc compute instance stop dev-vm'
+Всё перенесено в bashrc через .bash_aliases
