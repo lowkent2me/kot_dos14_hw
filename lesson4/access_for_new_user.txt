@@ -1,0 +1,16 @@
+devops@devops-virtual-machine:~$ ssh -J kotvs@$(ip_vm) kotvs@$(ip_vm2)
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-58-generic x86_64)
+
+
+Last login: Thu Mar  9 19:35:26 2023 from 10.1.2.12
+Использование ЦПУ(%): 0.0 Пользователь,  3.1 Система,  0.0 Приоритет, 96.9 Бездействие
+Оперативная память:    968.2МБ Всего,    310.1МБ Свободно
+Адрес IPv4: 10.1.2.22
+kotvs@host-local:~$ su - user1
+Password:
+user1@host-local:~$ . /home/kotvs/resources.sh
+Использование ЦПУ(%): 0.0 Пользователь,  0.0 Система,  0.0 Приоритет,100.0 Бездействие
+Оперативная память:    968.2МБ Всего,    295.8МБ Свободно
+Адрес IPv4: 10.1.2.22
+user1@host-local:~$ pwd
+/home/user1

@@ -1,0 +1,38 @@
+root@devops-virtual-machine:~# timedatectl timesync-status
+       Server: 194.190.168.1 (ru.pool.ntp.org)
+Poll interval: 2min 8s (min: 32s; max 34min 8s)
+         Leap: normal
+      Version: 4
+      Stratum: 1
+    Reference: GPS
+    Precision: 1us (-24)
+Root distance: 1.007ms (max: 5s)
+       Offset: +22.497ms
+        Delay: 41.752ms
+       Jitter: 8.503ms
+ Packet count: 2
+    Frequency: -274,769ppm
+root@devops-virtual-machine:~#
+выход
+devops@devops-virtual-machine:~$ timedatectl timesync-status
+       Server: 194.190.168.1 (ru.pool.ntp.org)
+Poll interval: 2min 8s (min: 32s; max 34min 8s)
+         Leap: normal
+      Version: 4
+      Stratum: 1
+    Reference: GPS
+    Precision: 1us (-24)
+Root distance: 1.007ms (max: 5s)
+       Offset: +22.497ms
+        Delay: 41.752ms
+       Jitter: 8.503ms
+ Packet count: 2
+    Frequency: -274,769ppm
+devops@devops-virtual-machine:~$ timedatectl status
+               Local time: Чт 2023-03-09 22:30:58 MSK
+           Universal time: Чт 2023-03-09 19:30:58 UTC
+                 RTC time: Чт 2023-03-09 19:30:58
+                Time zone: Europe/Moscow (MSK, +0300)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
