@@ -1,0 +1,1 @@
+for (( i=0; i<100; i++ )); do  dd if=/dev/urandom of=./$i bs=1M count=1 status=none && cat $i | base64 >$i.txt && rm $i; done
