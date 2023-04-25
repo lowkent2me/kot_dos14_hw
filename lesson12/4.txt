@@ -1,0 +1,1 @@
+rsync -vah --progress --min-size=400KB ../1/ /tmp/sync_1/
