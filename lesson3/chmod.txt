@@ -1,0 +1,32 @@
+devops@devops-virtual-machine:~/Рабочий стол/kot_dos14_hw/lesson3$ sudo adduser newser
+Добавляется пользователь «newser» ...
+Добавляется новая группа «newser» (1001) ...
+Добавляется новый пользователь «newser» (1001) в группу «newser» ...
+Создаётся домашний каталог «/home/newser» ...
+Копирование файлов из «/etc/skel» ...
+Новый пароль: 
+Повторите ввод нового пароля: 
+passwd: пароль успешно обновлён
+Изменение информации о пользователе newser
+Введите новое значение или нажмите ENTER для выбора значения по умолчанию
+	Полное имя []: new user
+	Номер комнаты []: 404
+	Рабочий телефон []: null
+	Домашний телефон []: null
+	Другое []: other
+Данная информация корректна? [Y/n] y
+devops@devops-virtual-machine:~/Рабочий стол/kot_dos14_hw/lesson3$ ll /home/
+итого 32
+drwxr-xr-x  5 root   root    4096 мар  7 22:52 ./
+drwxr-xr-x 20 root   root    4096 мар  7 19:42 ../
+drwxr-x--- 16 devops devops  4096 мар  7 22:05 devops/
+drwx------  2 root   root   16384 мар  6 21:52 lost+found/
+drwxr-x---  2 newser newser  4096 мар  7 22:52 newser/
+devops@devops-virtual-machine:~/Рабочий стол/kot_dos14_hw/lesson3$ sudo chmod 070 /home/newser/
+devops@devops-virtual-machine:~/Рабочий стол/kot_dos14_hw/lesson3$ ll /home/
+итого 32
+drwxr-xr-x  5 root   root    4096 мар  7 22:52 ./
+drwxr-xr-x 20 root   root    4096 мар  7 19:42 ../
+drwxr-x--- 16 devops devops  4096 мар  7 22:05 devops/
+drwx------  2 root   root   16384 мар  6 21:52 lost+found/
+d---rwx---  2 newser newser  4096 мар  7 22:52 newser/

@@ -1,0 +1,10 @@
+[Unit]
+Description = Создаёт резервную копию каталогов
+
+[Service]
+RemainAfterExit=true
+ExecStop=/usr/local/bin/back_up
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

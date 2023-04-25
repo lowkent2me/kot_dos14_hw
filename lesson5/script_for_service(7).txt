@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Скрипт делает резервную копию репозитория с домашкой
+curr_date="$(date +'%F_%H_%M')"
+
+
+tar -czf /home/devops/backups/kot_dos14_hw/$curr_date.tar.gz \
+/home/devops/Рабочий\ стол/kot_dos14_hw \
+&& echo 'Репозиторий скопирован успешно в каталог ~/backups/'
